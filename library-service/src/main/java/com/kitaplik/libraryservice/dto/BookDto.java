@@ -17,6 +17,4 @@ public class BookDto {
     private String pressName;
 
 
-
-
 }
