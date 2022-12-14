@@ -9,6 +9,8 @@ import com.kitaplik.libraryservice.repository.LibraryRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class LibraryService {
 
@@ -50,5 +52,11 @@ public class LibraryService {
 
         libraryRepository.save(library);
 
+    }
+
+    public List<String> getAllLibrary() {
+        return libraryRepository.findAll()
+                .stream().
+                map(Library::getId).toList();
     }
 }
