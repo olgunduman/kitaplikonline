@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-service" />
+        <module name="config-server" />
         <module name="library-service" />
         <module name="book-service" />
         <module name="gateway" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="book-service" target="17" />
+      <module name="config-server" target="17" />
       <module name="eureka-service" target="17" />
       <module name="gateway" target="17" />
       <module name="library-service" target="17" />
@@ -23,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="book-service" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="eureka-service" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="library-service" options="-parameters" />
